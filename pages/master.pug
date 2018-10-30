@@ -86,36 +86,36 @@ body
                       p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           div.sugestion.w-50
               h1.text-dark Sugestões
-              form.w-75
+              form(action="https://formspree.io/dbo.sociologia2018@gmail.com" method="POST").w-75
                   div.form-group
                       label(for="name") Nome:
-                      input.form-control#name(type="text" required placeholder="Digite seu nome")
+                      input.form-control#name(type="text" name="name" required placeholder="Digite seu nome")
                   div.form-group
                       label(for="email") Email:
-                      input.form-control#email(type="email" placeholder="name@example.com" required)
+                      input.form-control#email(type="email" name="email" placeholder="name@example.com" required)
                   div.form-group
                       label(for="titleForm") Título:
-                      input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                      input.form-control#titleForm(type="text" name="title" placeholder="Titulo da sugestão")
                   div.form-group
                       textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
-                  input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
+                  input.btn.btn-outline-success.mb-5(type="submit" value="send")
     block foot.sugestion
       footer.d-flex.column.w-100
         div.sugestion.d-flex.justify-content-center.w-100
-            form.w-50
+            form(action="https://formspree.io/dbo.sociologia2018@gmail.com" method="POST").w-50
                 div.form-group
                     h1.text-dark.mb-5.mt-2 Sugestões
                     label(for="name") Nome:
-                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                    input.form-control#name(type="text" name="name" required placeholder="Digite seu nome")
                 div.form-group
                     label(for="email") Email:
-                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                    input.form-control#email(type="email" name="email" placeholder="name@example.com" required)
                 div.form-group
                     label(for="titleForm") Título:
-                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                    input.form-control#titleForm(type="text" name="title" placeholder="Titulo da sugestão")
                 div.form-group
-                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
-                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")      
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" name="textarea" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="send")      
     div.bg-dark.d-flex.justify-content-center.w-100
       p.text-white Copyright &copy;
   script(src='../node_modules/jquery/dist/jquery.slim.min.js')
