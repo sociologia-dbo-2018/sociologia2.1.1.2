@@ -1,0 +1,29 @@
+extends master.pug
+block head
+    link(rel="stylesheet" href="../css/feedPage.css")
+    title Feed de Notícias
+block content
+    div.title.container-fluid.d-flex.mt-4.align-items-center.justify-content-around
+        h2.d-flex Feed de Notícias
+        a(href="./report.pug").btn.btn-outline-dark.btn-lg.btn-block.btn-sm.report.mb-5 Reportar
+    div.map.d-flex.justify-content-center.mt-5.mb-4
+        img.w-75.h-75(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg")
+    hr
+    h2.d-flex.mt-4 RSS
+    div.rssArea.d-flex.flex-row.w-100.justify-content-center.mt-5
+        div.rsslocal.w-25.ml-5
+            ul.list-group
+                li.list-group-item Loren 1
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+        div.rssglobal.w-50.mr-5
+            ul.list-group
+                li.list-group-item Loren 1
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+                li.list-group-item Loren 2
+block foot.sugestion
+

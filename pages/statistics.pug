@@ -1,0 +1,37 @@
+extends master.pug
+block head
+    title Estatísticas
+block content
+    div.container-fluid.d-flex
+        h2.flex-start Dados Estatísticos
+    hr.w-75
+    //- Para graficos
+
+    div.statistics-local.d-flex.flex-column.align-items-center
+        div.d-flex.flex-wrap.justify-content-around
+            //- classe comum a todos .graphics
+            div.graphics.border.border-secondary.p-2.mt-2
+                h3.violencia Violência
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.etnia Etnia
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.idade Idade
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.renda Renda
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+            div.graphics
+                h3.renda Renda
+                img(src="http://blog.coletum.com/wp-content/uploads/2017/11/grafico-03-300x219.png")
+        hr.w-50
+        div.download.d-flex.flex-column
+            h4.download-title Você é um 'ciêntista de dados' ou tem interesses? Faça download
+            a(href="#") Leia os termos
+            div.d-flex.justify-content-center.align-self-start
+                input#termos(type="checkbox")
+                label(for="termos") Concordo com os termos acima
+            a.btn.btn-primary.w-25.align-self-end(href="#") Baixar
+block foot.sugestion

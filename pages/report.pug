@@ -1,0 +1,17 @@
+extends master.pug
+block head
+    title Reportagem de casos
+    link(rel="stylesheet" href="../css/report.css")
+block content
+    div.container-fluid.d-flex
+        h2.flex-start.ml-5.mb-5.mt-5 Selecione o local:
+    div.d-flex.align-items-center.justify-content-around.mb-5
+        div.mapa.w-75
+            img(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg").w-100
+
+        div.form.d-flex.flex-column.w-50.justify-content-center.align-items-center#form
+            //-    Apenas para teste
+            iframe(src="https://docs.google.com/forms/d/e/1FAIpQLSe8bn7COblGOXqGBR0FT5Mmu7jNkMb0hJorIacd5FRx9x_-8g/viewform?embedded=true").w-75
+
+            button.btn.btn-primary.mt-5.w-50(type="submit").font-weight-bold Enviar
+block foot.sugestion

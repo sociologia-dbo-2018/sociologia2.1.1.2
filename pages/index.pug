@@ -1,0 +1,27 @@
+extends master.pug
+block head
+    link(rel="stylesheet" href="../css/homePage.css")
+    link(rel="stylesheet" href="../css/style.css")
+block content
+    div.project.d-flex.justify-content-center.flex-column.align-items-center.mt-3
+        a(href="./about.pug") Project Name
+        p.text-center Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. Lorem ipsum dolor sit amet,  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...
+            //- a(href="./about.pug")  Ler mais
+    hr.w-50
+    div.feed.container-fluid.d-flex.flex-column
+        h2.ml-4 Feed
+        div.interation.d-flex.flex-row
+            div#map.w-75
+                img.w-75.h-75(src="https://rocketz.com.br/assets/store/img-store-cu-map-100123ec35cb58f100158e68b53bcd0c77a7f5120769df584d4aa67bb56e1c8c.jpg")
+                //- div.content(style="padding: 2% 2%;")
+
+            div.optionsReport.w-50.mt-5
+                h3 Tipo de violencia
+                hr
+                ul.list-group.w-150.d-flex
+                    li.list-group-item.itemClick Loren Ipsun
+                    li.list-group-item.itemClick Loren Ipsun
+                    li.list-group-item.itemClick Loren Ipsun
+                    li.list-group-item.itemClick Loren Ipsun
+                button.btn.btn-outline-dark.btn-lg.btn-block.mt-4(type="button") Reportar
+    block foot.sugestion

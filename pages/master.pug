@@ -1,0 +1,126 @@
+doctype html
+html(lang='pt-BR')
+head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(rel='stylesheet' href='../node_modules/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet' href='../node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+    link(rel="stylesheet" href="../css/colors.css")
+    link(rel="stylesheet" href="../css/effects.css")
+    link(rel="stylesheet" href="../css/header.css")
+    link(rel="stylesheet" href="../css/footer.css")
+    link(rel="shortcut icon" href="../img/logo.png" type="image/x-icon")
+    block head
+body
+  div.d-flex.flex-column.align-items-center.master-container
+    header.d-flex.flex-row-reverse.flex-direction-center.justify-content-center.container-fluid
+      nav.navbar.navbarSup.container-fluid
+        div.container-fluid
+          div.navbar-header
+            i.navbar-toggle.collapsed.fas.fa-bars(
+              data-toggle="collapse"
+              data-target="#alignment"
+              aria-expanded="false")
+          div.d-flex.justify-content-center.logo
+            a(href="./index.pug")
+                img(
+                src="../img/logo.png"
+                width="250px"
+                height="175px"
+                href="./index.pug")
+          div
+          div.collapse.navbar-collapse(id="alignment")
+            hr.w-75
+            ul.nav.navbar-nav.d-flex.flex-row.justify-content-center
+              li.mr-4
+                a(href="./index.pug") Página Inicial
+              li.mr-4
+                a(href="./about.pug") Sobre nós
+              li.mr-4
+                a(href="./feed.pug") Feed de Notícias
+              li.mr-4
+                a(href="./report.pug") Reportar Caso
+              li.mr-4
+                a(href="./statistics.pug") Estatisticas
+    hr.w-75
+    block content
+    block foot
+      footer.d-flex.container-fluid
+          div.collaborators.d-flex.flex-column.w-50
+              div.collaborator.d-flex.flex-row
+                  div.icon.d-flex.flex-column.align-content-center
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              div.collaborator.d-flex.flex-row
+                  div.icon
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              div.collaborator.d-flex.flex-row
+                  div.icon
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              div.collaborator.d-flex.flex-row
+                  div.icon
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              div.collaborator.d-flex.flex-row
+                  div.icon
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              div.collaborator.d-flex.flex-row
+                  div.icon
+                      div.person
+                      h5.nameCollaborator Name
+                  div.aboutMe
+                      p.descriptionCollaborator Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          div.sugestion.w-50
+              h1.text-dark Sugestões
+              form.w-75
+                  div.form-group
+                      label(for="name") Nome:
+                      input.form-control#name(type="text" required placeholder="Digite seu nome")
+                  div.form-group
+                      label(for="email") Email:
+                      input.form-control#email(type="email" placeholder="name@example.com" required)
+                  div.form-group
+                      label(for="titleForm") Título:
+                      input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                  div.form-group
+                      textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                  input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")
+    block foot.sugestion
+      footer.d-flex.column.w-100
+        div.sugestion.d-flex.justify-content-center.w-100
+            form.w-50
+                div.form-group
+                    h1.text-dark.mb-5.mt-2 Sugestões
+                    label(for="name") Nome:
+                    input.form-control#name(type="text" required placeholder="Digite seu nome")
+                div.form-group
+                    label(for="email") Email:
+                    input.form-control#email(type="email" placeholder="name@example.com" required)
+                div.form-group
+                    label(for="titleForm") Título:
+                    input.form-control#titleForm(type="text" placeholder="Titulo da sugestão")
+                div.form-group
+                    textarea.form-control#sugestion(placeholder="Descrição sugestiva" rows="5")
+                input.btn.btn-outline-success.mb-5(type="submit" value="Enviar")      
+    div.bg-dark.d-flex.justify-content-center.w-100
+      p.text-white Copyright &copy;
+  script(src='../node_modules/jquery/dist/jquery.slim.min.js')
+  script(src='../node_modules/popper.js/dist/popper.min.js')
+  script(src='../node_modules/bootstrap/dist/js/bootstrap.min.js')
+  script(src='../node_modules/handlebars/dist/handlebars.min.js')
+
+  script(src='../main.js')
