@@ -1,0 +1,16 @@
+.title > h2 {
+    color: rgba(20, 20, 20, 0.801);
+    font-weight: bold;
+}
+.report {
+    width: 10%;
+}
+.rsslocal, .rssglobal {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    height: 200px;
+}
+
+hr {
+    width: 85%;
+}

@@ -1,0 +1,19 @@
+.fa-bars {
+    font-size: 1.5em;
+    transition: color 1s;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fa-bars:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.itemClick {
+    transition: 1s background-color;
+}
+
+.itemClick:hover {
+    background-color: grey;
+    cursor: pointer;
+}

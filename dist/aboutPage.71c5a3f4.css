@@ -1,0 +1,14 @@
+.ilustration {
+    border-radius: 100%;
+    background-color: rgba(252, 0, 176, 0.575);
+    width: 140px;
+    height: 140px;
+}
+
+.aboutMe > p.text-center {
+    max-width: 40ch;
+}
+
+.description > p {
+    max-width: 90ch;
+}
