@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>generateregularpolygonHTML</title>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <style type='text/css'>
+    body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      font-family: 'Segoe UI', Helvetica, Arial, Sans-Serif
+    }
+  </style>
+</head>
+
+<body>
+  <div id='printoutPanel'></div>
+
+  <div id='myMap' style='width: 100vw; height: 100vh;'></div>
+  <script type='text/javascript'>
+    function loadMapScenario() {
+      var map = new Microsoft.Maps.Map(document.getElementById('myMap'), {
+        zoom: 16
+      });
+      Microsoft.Maps.loadModule('Microsoft.Maps.SpatialMath', function () {
+        // Get locations of a regular hexagon, 5 miles from each vertex the map center 
+        var locations = Microsoft.Maps.SpatialMath.getRegularPolygon(map.getCenter(), -0.03, 8, Microsoft.Maps.SpatialMath
+          .DistanceUnits.Miles);
+        var polygon = new Microsoft.Maps.Polygon(locations, null);
+        map.entities.push(polygon);
+      });
+
+    }
+  </script>
+<script type='text/javascript' src='http://www.bing.com/api/maps/mapcontrol?key=Aqvox_qs3IhO0j6Rcw_JSPXqKyigrSDoHnyhHfSc5AODYtYe_GIOlPX-gZFRy56n&callback=loadMapScenario'
+    async defer></script>
+</body>
+
+</html>
